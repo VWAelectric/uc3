@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="idcor">
+
+    <h1 id="idNome"></h1>
+    
+    <script>
+        //Entrada de dados:
+        let nome = prompt("Qual é seu nome");
+        let cor = prompt("Qual é sua cor preferida");
+
+        document.getElementById("idNome").innerText = nome;
+        document.getElementById("idcor").style.backgroundColor = cor;
+    </script>
+</body>
+</html>
