@@ -1,20 +1,14 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    <script>
         //Declaração de variável
 
         let idade = 25 
         const nome = 'Clodoaldo'
         var cidade = 'São Paulo'
 
-        // Tipos de dados primitivos
+        console.log(idade)
+        console.log(nome)
+        console.log(cidade)
+
+        // // Tipos de dados primitivos
 
         let preco = 19.99 // float
         let quantidade = 3 // int
@@ -23,20 +17,20 @@
         let valor// Undefined
         let vazio = null // Nulo
 
-        //Operações Básicas:
+        console.log(vazio)
+        console.log()
 
-        let a = 10 
-        let b = 5
-        let soma = a + b // Resultado: 15
-        soma = soma + subtracao // soma é igual a 20
+        // //Operações Básicas:
+
+        // let a = 10 
+        // let b = 5
+        // let soma = a + b // Resultado: 15
+        // soma = soma + subtracao // soma é igual a 20
 
         //Comparação (igualdade e desigualdade)
 
         let x = 10 
-        let y = '10'
+        let y =  5
         console.log(x == y); // true (compara o valor, não o tipo)
         console.log(x === y); // false (compara o valor e o tipo)
         console.log("20 é diferente de 10?: ", 20 !== "20");
-    </script>
-</body>
-</html>
