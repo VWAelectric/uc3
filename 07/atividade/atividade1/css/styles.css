@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color: #333;
+    color: #fff;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 16px;
+    font-size: 16px;
+    margin: 20px;
+}
+
+button {
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: rgba(0,0,0,0.2);
+   
+}
