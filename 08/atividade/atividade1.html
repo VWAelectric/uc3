@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <button id="botaoCor">Passe o mouse aqui!</button>
+
+    <button id="mudaPorNome" onmouseover="colocaCor()" onmouseout="removeCor()">Passe o mouse aqui também!</button>
+    
+    <script>
+        const botao = document.getElementById("botaoCor");
+
+        botao.onmouseover = function() {
+            botao.style.background = "yellow";
+        }
+
+        botao.onmouseout = function() {
+            botao.style.background = "";
+        }
+
+        const botaoPorNome = document.getElementById("mudaPorNome");
+
+        function colocaCor() {
+            botaoPorNome.style.background = "red";
+        }
+
+        function removeCor() {
+            botaoPorNome.style.background = "";
+        }
+    </script>
+</body>
+</html>
