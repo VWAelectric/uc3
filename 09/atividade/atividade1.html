@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01</title>
+</head>
+
+<body>
+
+    <p id="texto">Parágrafo de exemplo</p>
+    <button id="btnMudancas">Manipulação do DOM</button>
+
+    <script>
+        let texto = document.getElementById("texto")
+        let novoItem = document.createElement("hr")
+        
+        const btnMudancas = document.getElementById("btnMudancas")
+        btnMudancas.onclick  = function () {
+            texto.innerText = 'Este era um parágrafo de exemplo e agora ele faz parte da página'
+
+            document.querySelector("body").append(novoItem)
+
+            document.querySelector("title").remove();
+        }
+
+
+
+    </script>
+</body>
+
+</html>
