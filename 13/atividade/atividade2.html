@@ -35,7 +35,7 @@
 
     <button id="resetBtn">Redefinir Estilos</button>
     <button id="hideUnselected">Esconder Destacados</button>
-    
+
     <script>
         const items = document.querySelectorAll(".item");
         const resetButton = document.getElementById("resetBtn");
@@ -55,10 +55,10 @@
 
 
         hideBtn.addEventListener("click", () => {
-            items.forEach(item =>{
+            items.forEach(item => {
                 if (!item.classList.contains("highlight")) {
                     item.style.display = "none";
-                } 
+                }
             })
         })
     </script>
