@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo da Memória</h1>
+        
+        <!-- Formulário para o usuário definir linhas e colunas -->
+        <div class="settings">
+            <label for="rows">Linhas:</label>
+            <input type="number" id="rows" min="2" max="10" value="4">
+            
+            <label for="columns">Colunas:</label>
+            <input type="number" id="columns" min="2" max="10" value="4">
+            
+            <button id="startGameButton">Iniciar Jogo</button>
+        </div>
+        
+        <p>Jogadas: <span id="moveCount">0</span></p>
+        <div class="board" id="board"></div>
+        <button id="restartButton" style="display: none;">Reiniciar Jogo</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
