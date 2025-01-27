@@ -6,20 +6,17 @@ body {
 .card {
     width: 150px;
     height: 100px;
+    text-align: center;
     border: 1px solid #ccc;
-    border-radius: 12px;
+    border-radius: 10px;
     background-color: #f9f9f9;
     padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     cursor: pointer;
 }
 
 .card.selecionado {
     background-color: lightblue;
-    box-shadow: 5px 5px 5px #888888;
+    border-color: darkblue;
 }
 
 .container {
@@ -29,25 +26,17 @@ body {
 }
 
 .botoes {
-    margin: 20px;
+    margin-top: 20px;
 }
 
 .btn-comprar {
     background: darkgreen;
     color: white;
-    width: 150px;
-    height: 60px;
-    border-radius: 8px;
-    border: none;
 }
 
 .btn-redefinir {
     background: red;
     color: white;
-    width: 150px;
-    height: 60px;
-    border-radius: 8px;
-    border: none;
 }
 
 button {
@@ -59,4 +48,35 @@ button {
 
 button:hover {
     opacity: 0.8;
+}
+
+.resultado {
+    margin-top: 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.whatsapp-sticky {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #25d366;
+    color: white;
+    padding: 15px;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+    box-shadow: 0 4px 6px rgb(21, 71, 35);
+}
+
+.whatsapp-sticky img {
+    width: 24px;
+    height: 24px;
+}
+
+.whatsapp-sticky:hover {
+    background: #7bd19f;
 }
