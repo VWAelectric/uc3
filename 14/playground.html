@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <div id="banner" style="width: 200px; height: 100px; background: red;"></div>
+    <button id="botao">Clique aqui e ganhe minhas contas a pagar</button>
+    <script>
+        // executa uma fução uma única vez após um tempo definido
+        // setTimeout(callback, tempo)
+        console.log("Olá, na hora que página carregou");
+        
+        setTimeout(() => {
+            console.log("Olá, atrasado!");
+        }, 5000);
+
+        setTimeout(()=>{
+            document.getElementById("banner").style.display = "none";
+        }, 5000);
+
+        //executa uma função  repetidamente em intervalos de tempo
+        // setInterval(callback, intervalo)
+
+        setInterval(() =>{
+            let btn = document.getElementById('botao');
+            btn.style.opacity = btn.style.opacity === "0" ? "1" : "0";
+         }, 1000);
+    </script>
+</body>
+</html>
